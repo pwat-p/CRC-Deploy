@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-kanit{
+    font-family: 'Kanit', sans-serif;
+}
+
+.my-input-focus{
+    @apply outline-none ring-2 ring-gray-100 ring-offset-2 ring-offset-gray-300 rounded-xl px-3 py-1
+    focus:ring-gray-300 focus:ring-offset-gray-500
+}
+
+.my-input-danger{
+    @apply outline-none ring-2 ring-red-100 ring-offset-2 ring-offset-red-300 rounded-xl px-3 py-1
+    focus:ring-red-300 focus:ring-offset-red-500
+}
+
+.my-button-confirm{
+    @apply bg-green-500 hover:bg-green-600 active:bg-green-700 focus-visible:ring ring-green-300 text-white text-center
+    rounded-xl outline-none px-5 py-2
+}
+
+.my-button-info{
+    @apply bg-blue-500 hover:bg-blue-600 active:bg-blue-700 focus-visible:ring ring-blue-300 text-white text-center
+    rounded-xl outline-none px-5 py-2
+}
+
+.my-button-cancel{
+    @apply bg-transparent hover:bg-red-500 text-red-700 hover:text-white py-2 px-4 border border-red-500
+    hover:border-transparent rounded-xl
+}
+
+/* search province filler */
+.select2.select2-container.select2-container--default
+{
+    @apply bg-white rounded-xl cursor-pointer ring-2 ring-gray-100 ring-offset-2 ring-offset-gray-300 rounded-xl
+    focus:ring-gray-300 focus:ring-offset-gray-500
+}
+
+#select2-province-container
+{
+    @apply block py-1 mx-3
+}
+#select2-province-results
+{
+    @apply max-h-60 overflow-y-auto
+}
+.select2-results__options
+{
+    @apply border-2 bg-white
+}
+.select2-results__option--highlighted
+{
+    @apply bg-gray-100
+}
+
+/* Login */
+
+.login-button{
+    @apply
+    w-full
+    text-center
+    bg-gray-800
+    text-white
+    border border-transparent
+    rounded-md
+    font-semibold
+    text-xl
+    uppercase
+    hover:bg-gray-700
+}
+
+.delete_button{
+    @apply
+    /* p-2
+    px-4 */
+    /* bg-red-500
+    hover:bg-red-600 */
+    rounded-lg
+    text-gray-500
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -25%;
+    /* bottom: 50%; */
+    background-color: #f1f1f1;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    /* margin-left: .25rem; */
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {background-color: #ddd;}
+
+  .dropdown:hover .dropdown-content {display: block;}
+
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
