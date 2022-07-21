@@ -17,7 +17,7 @@ class BranchSeeder extends Seeder
         $response = Branch::first();
         if($response == null){
             Branch::create([
-                'name' => 'admin',
+                'name' => 'ADMIN',
             ]);
 
             if(env('APP_ENV') === 'local') {
