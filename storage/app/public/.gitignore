@@ -1,4 +1,5 @@
 *
-!model_image/
+!/model_image
+!model_image/*
 !default/
 !.gitignore
