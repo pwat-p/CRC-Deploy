@@ -36,7 +36,7 @@ class BranchController extends Controller
         ]);
 
         $branches = Branch::get();
-        return view('branch.create', compact('branches'));
+        return redirect()->back();
     }
 
 
